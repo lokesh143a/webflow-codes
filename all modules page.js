@@ -330,7 +330,7 @@
 
 
 
-// -----------------------all modules page for showing pop up only  with new design and new logic with buttons------------------- 
+// // -----------------------all modules page for showing pop up only  with new design and new logic with buttons------------------- 
 
 // <div class="popup-overlay" id="tabPopup">
 //   <div class="popup-box">
@@ -346,13 +346,37 @@
 
 //     <div class="popup-nav">
 //      <div class="popup-prev">
-//   <span class="arrow arrow-left">←</span>
+//   <span class="arrow arrow-left">
+//   	<svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+//     <path d="M20 12H6"
+//           stroke="currentColor"
+//           stroke-width="1.4"
+//           stroke-linecap="round"/>
+//     <path d="M10 7L4 12L10 17"
+//           stroke="currentColor"
+//           stroke-width="1.4"
+//           stroke-linecap="round"
+//           stroke-linejoin="round"/>
+//   </svg>
+//   </span>
 //   <span class="prev-label"></span>
 // </div>
 
 // <div class="popup-next">
 //   <span class="next-label"></span>
-//   <span class="arrow arrow-right">→</span>
+//   <span class="arrow arrow-right">
+//   	<svg viewBox="0 0 24 24" width="28" height="28" fill="none">
+//     <path d="M4 12H18"
+//           stroke="currentColor"
+//           stroke-width="1.4"
+//           stroke-linecap="round"/>
+//     <path d="M14 7L20 12L14 17"
+//           stroke="currentColor"
+//           stroke-width="1.4"
+//           stroke-linecap="round"
+//           stroke-linejoin="round"/>
+//   </svg>
+//   </span>
 // </div>
 //     </div>
 
@@ -375,7 +399,8 @@
 //   color: #ffffff;
 //   width: 90%;
 //   max-width: 500px;
-//   max-height: 560px;   /* limit height */
+//   min-height:560px;
+//   max-height: 85vh;   /* limit height */
 //   overflow-y: auto;   /* ✅ entire popup scrolls */
 
 //   border-radius: 16px;
@@ -408,7 +433,7 @@
 // .popup-nav {
 //   display: flex;
 //   gap: 12px;
-//   margin-top: 61.37px; /* exact spacing */
+//   margin-top: auto; /* exact spacing */
 // }
 
 // /* Buttons */
@@ -416,24 +441,24 @@
 // .popup-next {
 //   flex: 1;
 //   border-radius: 32.6px;
-
 //   padding: 9.31px 22.12px;
 //   background-color: #024069;
 //   color: #ffffff;
-//         min-height:32.63px;
+//   min-height: 32.63px;
+
 //   font-family: 'Inter', sans-serif;
 //   font-weight: 700;
 //   font-size: 11.5px;
-//   line-height: 1.2;
+//   line-height: 1;
 
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
 //   gap: 6px;
+// }
 
-//   text-align: center;
-//   cursor: pointer;
-//   transition: 0.3s ease;
+// .arrow svg {
+//   display: block;
 // }
 
 // /* Smaller arrow */
