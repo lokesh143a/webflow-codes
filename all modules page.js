@@ -1,3 +1,70 @@
+
+//-----------------------------------------------------------global code-----------------------------------------------------------------------------------------
+// <style>
+  
+ 
+//   .w-webflow-badge{
+//   display:none !important;
+//   }
+  
+
+//   /* 1. EFFECT FOR CHROME, SAFARI, EDGE */
+//   .backdrop-filter {
+//     position: relative; 
+//     -webkit-backdrop-filter: blur(30px) !important;
+//     backdrop-filter: blur(30px) !important;
+//     isolation: isolate !important;
+//     will-change: backdrop-filter;
+//   } 
+ 
+
+//   /* 2. THE FIREFOX FIX */
+//   @-moz-document url-prefix() {
+//     /* Stop the main container from trying to blur (which it fails at) */
+//     .backdrop-filter {
+//       backdrop-filter: none !important;
+//       background-color: transparent !important;
+//       overflow: hidden !important; /* This is CRITICAL to clip the blur edges */
+//     }
+
+//     /* Create the blurred "Glass" layer */
+//     .backdrop-filter::before {
+//       content: "";
+//       position: absolute;
+//       top: -10px; left: -10px; right: -10px; bottom: -10px; /* Slightly larger than container */
+//       z-index: -1; 
+      
+//       /* Apply your specific dark blue color here */
+//       /* We use a higher opacity for the fallback so it doesn't vanish */
+//       background-color: rgba(2, 64, 105, 0.9) !important; 
+      
+//       /* Standard blur is 100% supported in Firefox */
+//       filter: blur(30px);
+      
+//       /* Force Firefox to keep this layer behind the text */
+//       transform: translateZ(-1px);
+//     }
+    
+//     /* Ensure your links/names stay visible and white */
+//     .backdrop-filter * {
+//       position: relative;
+//       z-index: 1;
+//     }
+//   }
+
+  
+ 
+// @media (min-width: 992px) {
+//   .nav-menu.w-nav-menu {
+//     transform: none !important;
+//   }
+// }
+
+
+  
+//  </style>
+
+
 // -------------------------all modules page like earlier logic-----------------------------------------
 
 // {
